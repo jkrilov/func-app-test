@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: krilovacrtest.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_5c73cfc07d554c1aa8506beff91751b5 }}/func-app-test:${{ github.sha }}
-        file: ./Dockerfile
+        file: Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
